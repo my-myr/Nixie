@@ -1,0 +1,153 @@
+
+.n-body {
+	font-family: 'nixieregular',sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black;
+	min-height: 300vh;
+	padding-top: 300px;
+	overflow-x: hidden;
+}
+
+
+
+
+.n-mars{
+	z-index: 90;
+
+  background: #C1272D;
+	position: relative;
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	padding-top: 100%;
+	text-align: center;
+	overflow: visible;
+}
+
+.n-sq{
+	margin-top:;
+	z-index: 100;
+	font-size: 15vw;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+   height: 70%;
+   background: ;
+	 text-align: center;
+	 overflow: visible;
+
+}
+
+.n-pagesize{
+	z-index: 1;
+	position: static;
+	width: 100%;
+   height: 22680px;
+   background: ;
+	 color: white;
+	 background-image: url("stars.jpg");
+	 background-repeat: repeat;
+}
+
+.spacer{
+	z-index: 1;
+	position: static;
+	width: 100%;
+   height: 5000px;
+background:;
+overflow: hidden;
+margin-bottom: -10%;
+
+}
+
+.container{
+	z-index: 90;
+	top:0%;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: visible;
+}
+
+.n-black{
+	z-index: 30;
+	position: absolute;
+	width: 100%;
+   height: 50%;
+	 background: black;
+	 top:0px;
+	 overflow: hidden;
+
+
+
+}
+
+.n-gradientmars{
+	position: absolute;
+	overflow: hidden;
+	z-index: 20;
+	top: -700%;
+	left: -100%;
+	width: 300%;
+   height: 1500%;
+	 background: rgb(188,149,94);
+	 background: radial-gradient(circle, rgba(188,149,94,1) 0%, rgba(193,139,113,1) 27%, rgba(27,20,55,1) 60%, rgba(0,0,0,0) 88%);
+
+}
+
+.n-gradientearth{
+	bottom:100px;
+	position: relative;
+	z-index: 20;
+
+	width: 300%;
+   height: 100%;
+	 left:-100%;
+
+	 /* background: radial-gradient( circle, rgba(0,113,188,1) 26%, rgba(27,20,100,1) 56%, rgba(0,0,0,0) 88%); */
+	 background:
+    radial-gradient(
+      circle at bottom center,
+      rgba(0,113,188,1) 40%,
+			rgba(27,20,100,1) 65%,
+			rgba(0,0,0,0) 80%);
+	 overflow:visible;
+}
+
+.n-earth{
+	z-index:50;
+	top: -300px;
+  background: #006837;
+	position: relative;
+	top: 95%;
+	left:-20%;
+	border-radius: 50%;
+	width: 140%;
+	height: auto;
+	padding-top: 100%;
+	text-align: center;
+}
+
+@keyframes float {
+  0%   {margin-top: 0;}
+  50%  {margin-top:100px;}
+  100% {margin-top: 0;}
+}
+
+.float1{
+  animation: float 3s infinite;
+	animation-delay: 0ms;
+}
+
+
+
+
+#myaudio{
+	opacity:0.1;
+	position: fixed;
+	background: red;
+	z-index: 100;
+}
