@@ -4,9 +4,8 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background: black;
-	height:100%;
-
+  background: white;
+	height:auto;
 	overflow-x: visible;
 }
 
@@ -66,22 +65,39 @@
   left: 0;
 
 }
+
+
 .parallax__layer--base {
-  transform: translateZ(0);
+  transform: translateZ(-0.5px) scale(1.5);
+	z-index:50;
 }
 .parallax__layer--back {
-  transform: translateZ(-1px);
+  transform: translateZ(-1px) scale(2);
+	z-index:50;
+}
+
+.parallax__layer--back2 {
+  transform: translateZ(-2px) scale(2);
+	z-index:60;
+}
+
+.redbox{
+	background: red;
+	mix-blend-mode: difference;
+	height: 600px;
+	width:600px;
+	margin-left:60%;
+
 }
 
 .spacer{
 	z-index: 1;
-	position: static;
+	position: absolute;
 	width: 100%;
    height: 5000px;
 background:;
 overflow: hidden;
-margin-bottom: -10%;
-
+bottom: -21600px;
 }
 
 .container{
@@ -141,7 +157,6 @@ margin-bottom: -10%;
 
 .n-earth{
 	z-index:50;
-	top: -300px;
   background: #006837;
 	position: relative;
 	top: 95%;
@@ -160,22 +175,53 @@ margin-bottom: -10%;
 	width:auto;
 	background: ;
 	color: #1BB700;
-	margin-top:9000px;
+	line-height: 2.6;
+
 
 }
 
+
+.margin1{
+	margin-top:9000px;
+	margin-left:200px;
+}
+
+.margin2{
+	margin-top:8000px;
+	right:200px;
+}
+
+.margin3{
+	margin-top:9000px;
+	margin-left:200px;
+}
+
+.margin4{
+	margin-top:9000px;
+	margin-left:200px;
+}
+
 .shadow{
-	filter: drop-shadow(30px 10px 4px white);
+	/* filter: drop-shadow(30px 10px 4px white); */
+	margin-left: 0px;
 }
 
 .yuri{
 height:270px;
 width:auto;
-background: url(yuri.gif) 0 0;
-background-position: bottom 40px left 10px;
 
 }
 
+img{
+max-width: 100%;
+max-height: 100%;
+}
+
+.science1{
+height:100%;
+width:100%;
+background: white;
+}
 
 
 .cursor {
