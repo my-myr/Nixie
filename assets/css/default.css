@@ -4,10 +4,9 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  background: black;
-	min-height: 300vh;
-	padding-top: 300px;
-	overflow-x: hidden;
+  background: white;
+	height:auto;
+	overflow-x: visible;
 }
 
 
@@ -27,9 +26,10 @@
 }
 
 .n-sq{
-	margin-top:;
+	margin-top:1200px;
+	margin-left:0px;
 	z-index: 100;
-	font-size: 15vw;
+	font-size: 4.5vw;
 	position: absolute;
 	top: 10%;
 	width: 100%;
@@ -37,29 +37,96 @@
    background: ;
 	 text-align: center;
 	 overflow: visible;
-
 }
 
+.n-sq2{
+	margin-top:1100px;
+	margin-left:0px;
+	z-index: 100;
+	font-size: 1vw;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+   height: 70%;
+   background: ;
+	 text-align: center;
+	 overflow: visible;
+	 line-height: 2.6;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}
+
+
+
 .n-pagesize{
-	z-index: 1;
-	position: static;
+	position: relative;
 	width: 100%;
    height: 22680px;
    background: ;
 	 color: white;
 	 background-image: url("stars.jpg");
 	 background-repeat: repeat;
+	 scale:100%;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+.parallax__layer {
+  position: absolute;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+
+}
+
+
+.parallax__layer--base {
+  transform: translateZ(-0.5px) scale(1.5);
+	z-index:50;
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+	z-index:50;
+}
+
+.parallax__layer--back2 {
+  transform: translateZ(-2px) scale(2);
+	z-index:50;
+}
+
+.blend{
+ mix-blend-mode: overlay;
+}
+
+
+.redbox{
+	background: #ad0008;
+	height: 600px;
+	width:600px;
+	margin-left:60%;
+	margin-top:3500px;
+	position: absolute;
+
 }
 
 .spacer{
 	z-index: 1;
-	position: static;
+	position: absolute;
 	width: 100%;
    height: 5000px;
 background:;
 overflow: hidden;
-margin-bottom: -10%;
-
+bottom: -21760px;
 }
 
 .container{
@@ -119,7 +186,6 @@ margin-bottom: -10%;
 
 .n-earth{
 	z-index:50;
-	top: -300px;
   background: #006837;
 	position: relative;
 	top: 95%;
@@ -131,23 +197,182 @@ margin-bottom: -10%;
 	text-align: center;
 }
 
-@keyframes float {
-  0%   {margin-top: 0;}
-  50%  {margin-top:100px;}
-  100% {margin-top: 0;}
+.sput--border{
+	width:100%;
+	height:100vh;
+	margin-top:-2000px;
+	background: orange;
+	z-index: 20;
+	position: absolute;
+	overflow: hidden;
 }
 
-.float1{
-  animation: float 3s infinite;
-	animation-delay: 0ms;
+.sputimg {
+	background: green;
+	margin-left: 300px;
+	position:absolute;
+	width:30%;
+	background: ;
+	color: #1BB700;
+	line-height: 2.6;
+}
+
+.sputspin {
+    position: absolute;
+		margin-top:100px;
+    top: 500px;
+    left: 5%;
+		background: red;
+    width:100%;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.sputspin:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.sputmotion{
+width:200px;
+height:200px;
+margin-left: -100px;
+margin-top:-100px;
+transform: rotate(-10deg);
+-webkit-animation:spin -10s linear infinite;
+-moz-animation:spin -10s linear infinite;
+animation:spin -10s linear infinite;
+}
+
+.sputmotion2{
+width:200px;
+height:200px;
+margin-left: -100px;
+margin-top:-100px;
+-webkit-animation:spin -10s linear infinite;
+-moz-animation:spin -10s linear infinite;
+animation:spin -10s linear infinite;
+transform: rotate(-190deg);
+bottom: -100px;
+position: absolute;
+right: -100px;
+}
+.textbox{
+	position:absolute;
+	height:auto;
+	width:auto;
+	background: ;
+	color: #1BB700;
+	line-height: 2.6;
+
+
 }
 
 
+.margin1{
+	margin-top:9000px;
+	margin-left:200px;
+}
+
+.margin2{
+	margin-top:8000px;
+	right:200px;
+}
+
+.margin3{
+	margin-top:10000px;
+	margin-left:0px;
+}
+
+.margin4{
+	margin-top:9000px;
+	margin-left:200px;
+}
+
+.shadow{
+	filter: drop-shadow(0px 0px 0.1px white);
+	margin-left: 0px;
+
+}
+
+.yuri{
+height:270px;
+width:auto;
+
+}
+
+img{
+max-width: 100%;
+max-height: 100%;
+}
+
+.science1{
+height:100%;
+width:100%;
+z-index: 46;
+
+}
 
 
-#myaudio{
-	opacity:0.1;
-	position: fixed;
-	background: red;
-	z-index: 100;
+.cursor {
+	postion:relative;
+	font-weight: 100;
+  font-size: 17px;
+  color: #1BB700;
+	-webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #1BB700;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #1BB700;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #1BB700;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #1BB700;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #1BB700;
+  }
 }
