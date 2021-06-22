@@ -20,8 +20,14 @@
 }
 
 .begin{
+margin-top:100px;
+z-index:10000;
+position: absolute;
+margin-left:45%;
+text-align: center;
+}
 
-
+.begin2{
 margin-top:100px;
 z-index:10000;
 position: absolute;
