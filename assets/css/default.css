@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'nixieregular';
-		src: url('nixie-webfont.woff2') format('woff2'),
+		src: url('nixie-webfont.woff') format('woff2'),
 		 url('nixie-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
